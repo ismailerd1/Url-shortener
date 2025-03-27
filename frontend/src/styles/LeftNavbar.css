@@ -1,0 +1,64 @@
+.navbar {
+    /*position: fixed; /* Sol tarafta sabit kalmasını sağlamak için */
+    /*top: 0; /* Üstten mesafe */
+    /*left: 0; /* Soldan mesafe */
+    /*width: 12vw; /* Genişlik ayarı */
+    background-color: #333; /* Arka plan rengi */
+    padding: 20px; /* İç boşluk */
+    color: white; /* Yazı rengi */
+    height: 100%; /* Yüksekliği tam yap */
+
+}
+
+.navbarbrand{
+    text-align: center;
+}
+
+.leftbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Genişlik ayarı */
+    height: 100%; /* Yüksekliği tam yap */
+    background-color: #333; /* Arka plan rengi */
+    transform: translateX(-99%); /* İlk başta gizli */
+    transition: transform 0.3s ease; /* Geçiş efekti */
+    z-index: 1000; /* Üstte görünmesi için */
+}
+
+.leftbar.open {
+    transform: translateX(0); /* Açıldığında görünsün */
+}
+
+.toggle-button {
+    position: absolute;
+    border-radius: 2em;
+    padding: 18px;
+    top: 0;
+    left: 5px;
+    z-index: 1100;
+}
+
+
+
+.bigg {
+    list-style-type: none; 
+    padding: 0;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.lili {
+    margin-bottom: 2em; /* Dikey mesafe */
+}
+
+.lili a {
+    color: white; /* Link rengi */
+    text-decoration: none; /* Altı çizgi kaldır */
+}
+
+.lili a:hover {
+    text-decoration: underline; /* Üzerine gelindiğinde altı çizgili yap */
+    /* background-color: black; */
+}
+

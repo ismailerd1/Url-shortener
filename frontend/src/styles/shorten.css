@@ -1,0 +1,16 @@
+.shortentitle{
+    margin: 1.5em;
+    text-align: center;
+}
+
+.urlscontainer{
+    margin-top: 6vh;
+    display: flex;
+    flex-direction: row;
+    gap: 10em;
+    justify-content: space-around;
+}
+
+.originalone, .shortone{
+    text-decoration: none;
+}

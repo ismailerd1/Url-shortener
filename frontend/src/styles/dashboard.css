@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.all {
+    width: 100%; 
+    height: 100vh;
+    display: flex; /* Flexbox kullan */
+    flex-direction: column
+
+  }
+.parameters{
+    width: 100%;
+    height: 10vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex: 0 1 auto;
+
+}
+
+.clicks{
+    display: flex;
+    gap: 20vw;
+}
+ 
+/* ortaya grafik eklenince margin kaldırılıp üste göre ayarlancak  */
+
+.mylinks {
+    margin-top: auto;
+    margin-bottom: 20vh;
+    text-align: center;
+}
+
+.link.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.link.detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Alt kenar çizgisi */
+    overflow: hidden; /* Taşmayı engelle */
+}
+
+.link.detail h3, .link.detail p {
+    margin: 0; /* Margin sıfırlama */
+    padding: 0 10px; /* Sağ ve sol padding ekleme */
+    flex: 1; /* Eşit alan dağılımı */
+    white-space: nowrap; /* Tek satırda kalmasını sağlama */
+    overflow: hidden; /* Taşmayı engelle */
+    text-overflow: ellipsis; /* Kesilme noktası */
+}
+
+.link.detail p {
+    text-align: center; /* Ortala */
+}
+.link.detail a {
+    color: #007bff; /* Normal bağlantı rengi */
+    text-decoration: none; /* Normalde altı çizili olmasın */
+}
+
+.link.detail a:hover {
+    text-decoration: underline; /* Üzerine gelindiğinde altı çizili olsun */
+}
+
+.link.detail a:visited {
+    color: #007bff; /* Tıklanmış bağlantı rengi (değiştirilmemiş) */
+    text-decoration: none; /* Altı çizili olmasın */
+}
+
